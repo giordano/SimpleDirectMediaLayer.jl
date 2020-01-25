@@ -16,5 +16,9 @@ matrix:
   allow_failures:
     julia: nightly
 
+cache:
+    directories:
+      - /home/travis/.julia/artifacts
+
 notifications:
     email: false
