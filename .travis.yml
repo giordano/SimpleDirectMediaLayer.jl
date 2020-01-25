@@ -1,10 +1,21 @@
 language: julia
+
+dist: xenial
+services: 
+  - xvfb
+
 os:
   - linux
   - osx
   - windows
+
 julia:
   - 1.3
   - nightly
+    
+matrix:
+  allow_failures:
+    julia: nightly
+
 notifications:
     email: false
